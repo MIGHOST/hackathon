@@ -1,0 +1,14 @@
+/*
+   Import partials below
+*/
+@import './helpers/variables';
+@import './helpers/placeholders';
+@import './helpers/mixins';
+@import './helpers/fonts';
+@import './bases/normalize';
+@import './bases/base';
+
+
+// /components/
+@import './src/sass/components/header';
+@import './src/sass/components/footer';

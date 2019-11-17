@@ -3,8 +3,14 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-
   padding-bottom: 46px;
+
+  @media (min-width: 1420px) {
+    background-size: 100% 514px;
+    background-position: 0 0;
+
+  }
+
 }
 
 

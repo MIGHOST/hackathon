@@ -140,15 +140,12 @@
     }
 
     &::before {
-      content: '';
-      display: block;
-      position: absolute;
       height: 160px;
       width: 222px;
       background-image: url(../images/jupiter.png);
       top: 15%;
       right: 0;
-      left: -75%;
+      left: -40%;
 
     }
 

@@ -1,0 +1,239 @@
+.team {    
+  background-color: $primary-white-color; 
+  background-image: url(../images/section-team/bg-site/section-2-bg.png);
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: 100% 1209px;
+    padding-top: 100px;
+
+    @media(min-width: 768px){      
+      background-image: url(../images/section-team/bg-site/tablet-2-bg.png);     
+      background-size: 100% 1249px;
+    }
+    @media(min-width: 1420px){          
+      background-image: url(../images/section-team/bg-site/destop-2-bg.png);     
+      background-size: 100% 710px;
+      padding-top: 350px;     
+      
+    }
+    
+
+  &__kids {   
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; 
+    align-items: center;    
+    margin-bottom: 74px;
+    @media(min-width: 1420px){
+      flex-direction: row-reverse;
+    }   
+     
+    &-title {
+      position: relative;
+      width: 250px;      
+      text-align: center;
+      color: $secondary-text-color;
+      font: 700 20px "Helvetica Neue Cyr";
+      line-height: 26px;
+      letter-spacing: 0.6px;
+      color: $secondary-text-color;
+      margin-bottom: 17px;
+
+      &--yellow {
+        color: $secondary-yellow-color;
+      }
+      @media(min-width: 768px){
+        width: 437px;        
+        font-size: 35px;
+        line-height: 45px;
+        letter-spacing: 1.05px;
+        margin-bottom: 102px;
+      }
+      @media(min-width: 1420px){
+        text-align: left;
+        margin-bottom: 86px;
+        width: 688px;        
+        font-size: 55px;
+        line-height: 75px;
+        letter-spacing: 1.65px;
+        margin: 0;
+        &::after{          
+          display: inline-block;
+          content: '';
+          width: 968px;
+          height: 721px;
+          position:absolute;
+          top:-290px; 
+          left:-1000px;               
+          background-image: url(../images/section-team/bg-site/section-1-bg.png);
+        }
+      }
+    }
+    &-bg{          
+      width: 311px;
+      height: 232px;
+      background-image: url(../images/section-team/bg-site/7-layers.png);
+      background-repeat: no-repeat;
+      background-position: center;
+      
+      @media(min-width: 768px){
+        width: 639px;
+        height: 477px;
+        background-image: url(../images/section-team/bg-site/7-tablet.png);
+
+      }
+      @media(min-width: 1420px){
+        position: relative;
+        width:660px;
+        height: 561px;              
+        background-image: url(../images/section-team/bg-site/4-layers.png);
+        
+      }
+    }    
+  }
+  &__wrapper{
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      
+    @media(min-width: 1420px){     
+      justify-content: space-between;
+      align-items: center;          
+    }
+
+  }
+  &__specialists {
+    padding-bottom: 45px;
+    @media(min-width: 768px){
+      padding-bottom: 84px;
+    }
+    @media(min-width: 1420px){
+      padding-bottom: 126px;
+    }
+   
+         
+    &-subtitle {
+      text-align: center;
+      
+      color: #e9e9f3;
+      font-family: "Helvetica Neue Cyr";
+      font-size: 30px;
+      font-weight: 400;
+      letter-spacing: 0.9px;
+      margin-bottom: 10px;
+      line-height: 1.2;
+        @media(min-width: 768px){
+          font-weight: 900;
+          font-size: 60px;
+          letter-spacing: 1.8px;
+          margin-bottom: 57px;
+        }      
+    }
+    
+    &-title {
+      @extend %title;
+      text-align: center;
+      margin-bottom: 80px;
+        @media(min-width: 768px){
+          font-size: 20px;
+          letter-spacing: 1.2px;
+          margin-bottom: 141px;
+        }
+        @media(min-width: 1420px){
+          font-size: 30px;
+          letter-spacing: 1.8px;
+          margin-bottom: 86px;
+        }
+    }
+    
+    &-colom{         
+      width: 200px;  
+            
+      &:not(:last-child){
+        margin-bottom: 34px;
+        @media(min-width: 768px){
+          margin-bottom: 50px;
+        }
+
+        @media(min-width: 1420px){
+          margin-bottom: 126px;
+          &:nth-last-child(-n+2){
+          margin-bottom: 0;
+          }
+        }
+      }
+      &--text{
+        width: 212px;
+        text-align: center;
+        @media(min-width: 768px){
+          display: flex;
+          flex-direction: column-reverse;
+          text-align: left;
+          padding-left: 45px;
+          width: 100%;
+          margin-bottom: 0;
+        }      
+          
+      }
+
+      @media(min-width: 768px){
+        display: flex;        
+        width: 562px;        
+      }
+      @media(min-width: 1420px){
+        width: 616px;
+      }      
+      
+    }
+    &-picture{
+      display: flex;
+      justify-content: center;    
+
+    }
+    &-name{
+      position: relative;
+      color: $secondary-yellow-color;
+      font-family: Mistral;
+      font-size: 20px;
+      font-weight: 400;
+      @media(min-width: 768px){
+        font-size: 30px;
+        &::before{
+          position: absolute;
+          left: -55px;
+          bottom: 0;
+          display: inline-block;
+          content: '';
+          width: 57px;
+          height: 37px;
+          background-image: url(../images/section-team/team/arrow/arrow-up.png);
+          background-repeat: no-repeat;
+        }
+      }
+      @media(min-width: 1420px){
+        font-size: 35px;
+      }
+      
+    }
+    &-text{
+      color: $secondary-text-color;
+      font-family: "Helvetica Neue Cyr";
+      font-weight: 400;
+      line-height: 30px;
+      letter-spacing: 0.48px;
+      @media(min-width: 768px){
+        font-size: 23px;
+        line-height: 35px;
+        letter-spacing: 0.69px;
+        margin-bottom: 45px;
+      }  
+      @media(min-width: 1420px){
+        font-size: 25px;
+        letter-spacing: 0.75px;
+      }         
+      
+    }    
+    
+  }
+  
+}

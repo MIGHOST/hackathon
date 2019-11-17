@@ -16,8 +16,10 @@
 
 
 .footer-block {
+  padding-top: 70px;
 
   @media (min-width: 768px) {
+    padding-top: 76px;
     position: relative;
 
     &::after {
@@ -36,6 +38,7 @@
 
 
   @media (min-width: 1420px) {
+    padding-top: 165px;
 
     &::after {
       position: absolute;
@@ -51,9 +54,8 @@
 }
 
 .footer__logo {
+  margin-bottom: 27px;
 
-  padding-top: 150px;
-  padding-bottom: 27px;
 
 }
 
@@ -110,10 +112,10 @@
 .footer-contact__list {
   @extend%list;
   text-align: center;
-  padding-top: 33px;
+  margin-top: 33px;
 
   @media (min-width: 768px) {
-    padding: 0;
+
     margin-bottom: 45px;
 
   }
@@ -197,8 +199,8 @@
 
 .footer-list {
   @extend%list;
-  padding-top: 36px;
-  padding-bottom: 46px;
+  margin-top: 36px;
+  margin-bottom: 46px;
   text-align: center;
 
   @media (min-width: 768px) {
@@ -243,10 +245,10 @@
 
 @keyframes logo-wake {
   0% {
-      transform: translateY(-200px);
+    transform: translateY(-200px);
   }
 
   100% {
-      transform: translateY(0);
+    transform: translateY(0);
   }
 }

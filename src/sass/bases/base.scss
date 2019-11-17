@@ -20,16 +20,22 @@ body {
   letter-spacing: 0.48px;
 }
 
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
 .container {
   width: 290px;
   margin: 0 auto;
 }
 
 @media (min-width: 768px) {
-.container {
-  width: 710px;
-  margin: 0 auto;
-}
+  .container {
+    width: 710px;
+    margin: 0 auto;
+  }
 }
 
 @media (min-width: 1420px) {

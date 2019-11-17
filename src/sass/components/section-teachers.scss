@@ -1,0 +1,287 @@
+.section-teachers {
+  padding-bottom: 55px;
+
+}
+
+.section-title {
+  @extend%title;
+  text-align: center;
+
+  &--teachers {
+    padding-top: 54px;
+    padding-bottom: 35px;
+  }
+}
+
+.section-teachers__block-content {
+  width: 270px;
+  // height: 594px;
+  box-shadow: 0 10px 30px rgba(2, 2, 1, 0.07);
+  background-color: $primary-white-color;
+  margin: 0 auto;
+}
+
+.section-teachers__block-content--left {
+  display: none;
+}
+
+.section-teachers__block-content--right {
+  display: none;
+}
+
+.section-teachers__block-img {
+  width: 270px;
+  height: 290px;
+  overflow: hidden;
+  margin: 0 auto;
+}
+
+.section-teachers__block-pseuvdo {
+  position: relative;
+
+  &::after {
+    content: 'Ярослав Вовченко';
+    position: absolute;
+    display: block;
+    width: 219px;
+    height: 35px;
+    box-shadow: 8px 13px 24px #5a76e91f;
+    background-color: $primary-blue-color;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -17px;
+    color: $primary-white-color;
+    font-family: "Helvetica Neue Cyr";
+    font-weight: 700;
+    text-transform: uppercase;
+    line-height: 100%;
+    letter-spacing: 1.12px;
+    text-align: center;
+    padding-top: 11px;
+    padding-bottom: 11px;
+  }
+
+  &--right::after {
+    content: 'Максим Норець';
+  }
+  &--left::after {
+    content: 'Софія Гордієнко';
+  }
+}
+
+.section-wrapper {
+  position: relative;
+}
+
+.section-teachers__btn-wrapper {
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  width: 110%;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 145px;
+}
+
+.section-teachers__btn {
+  display: block;
+  position: relative;
+  width: 50px;
+  height: 50px;
+  box-shadow: 2px 3px 9px rgba(2, 2, 1, 0.1);
+  background-color: $primary-white-color;
+  border-radius: 50%;
+  border: none;
+
+  &--pre::after {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 8px;
+    height: 8px;
+    border-left: 2px solid #eaeaea;
+    border-bottom: 2px solid #eaeaea;
+    transform: rotate(45deg);
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    left: 17.8px;
+  }
+
+  &--pre::before {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 12px;
+    border-bottom: 2px solid #eaeaea;
+    top: 48.8%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  &--next {
+
+    &::after {
+      content: '';
+      position: absolute;
+      display: block;
+      width: 8px;
+      height: 8px;
+      border-left: 2px solid $primary-blue-color;
+      border-bottom: 2px solid $primary-blue-color;
+      transform: rotate(-135deg);
+      top: 0;
+      bottom: 0;
+      margin: auto;
+      right: 17.5px;
+    }
+
+    &::before {
+      content: '';
+      position: absolute;
+      display: block;
+      width: 12px;
+      border-bottom: 2px solid $primary-blue-color;
+      top: 48.8%;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
+}
+
+.section-teachers__list {
+  @extend%list;
+  padding: 20px 21px 20px 15px;
+}
+
+.section-teachers__item {
+  color: $primary-text-color;
+  font-family: "Helvetica Neue Cyr";
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 0.2px;
+
+  &:last-child {
+    color: $secondary-text-color;
+    font-family: "Helvetica Neue Cyr";
+    font-weight: 700;
+    letter-spacing: 0.42px;
+  }
+
+  pre {
+    color: inherit;
+    font-family: inherit;
+    font-size: inherit;
+    font-weight: inherit;
+    letter-spacing: inherit;
+  }
+}
+
+@media (min-width: 768px) {
+  .section-teachers {
+    padding-bottom: 90px;
+    overflow: hidden;
+    max-width: 100%;
+  }
+
+  .section-title--teachers {
+    padding-top: 88px;
+    padding-bottom: 54px;
+    font-size: 20px;
+    line-height: 100%;
+  }
+
+  .section-wrapper {
+    display: flex;
+    justify-content: center;
+  }
+
+  .section-teachers__btn-wrapper {
+    width: 420px;
+    left: 50%;
+    top: 270px;
+  }
+
+  .section-teachers__block-content {
+    width: 380px;
+    height: 586px;
+
+  }
+
+  .section-teachers__block-img {
+    width: 380px;
+    height: 290px;
+    overflow: hidden;
+    margin: 0 auto;
+  }
+
+  .section-teachers__block-pseuvdo {
+    &::after {
+      left: 34px;
+      transform: translateX(0);
+    }
+  }
+
+  .section-teachers__list {
+    padding: 36px 62px 38px 29px;
+  }
+
+  .section-teachers__block-content--left {
+    transform: translateX(-17%);
+    display: block;
+  }
+
+  .section-teachers__block-content--right {
+    transform: translateX(17%);
+    display: block;
+  }
+
+  .section-teachers__item {
+    font-size: 16px;
+    letter-spacing: 0.48px;
+
+    &:last-child {
+      font-weight: 700;
+      letter-spacing: 0.48px;
+    }
+  }
+}
+
+@media (min-width: 1420px) {
+  .section-teachers {
+    padding-bottom: 144px;
+
+  }
+.section-title--teachers {
+    padding-top: 130px;
+    padding-bottom: 84px;
+    font-size: 30px;
+  }
+  .section-teachers__btn-wrapper {
+    width: 1220px;
+    left: 50%;
+    top: 270px;
+  }
+  .section-teachers__list {
+    padding: 36px 66px 38px 29px;
+  }
+  .section-teachers__block-content--left {
+    transform: translateX(0);
+    margin-left: 10px;
+    margin-right: 10px;
+    order: 2;
+ 
+  }
+
+  .section-teachers__block-content--right {
+    transform: translateX(0);
+    margin-left: 10px;
+    margin-right: 10px;
+    order: 1;
+    
+  }
+  .section-teachers__block-content{
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+}

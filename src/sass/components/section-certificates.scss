@@ -1,0 +1,183 @@
+.section-certificates {
+  background-image: url(../images/header-bg-mobile.jpg);
+  background-size: 100% 416px;
+  background-position: top;
+  background-repeat: no-repeat;
+
+  @media (min-width: 768px) {
+    background-image: url(../images/bg-header-tablet.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 657px;
+    padding-bottom: 89px;
+  }
+
+  @media (min-width: 1420px) {
+    background-image: url(../../images/hd-bg-desktop.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 734px;
+    height: 734px;
+    padding-bottom: 0px;
+    overflow: hidden;
+  }
+}
+
+.section-certificates__title {
+  color: $primary-white-color;
+  line-height: 100%;
+  padding-top: 40px;
+  padding-bottom: 22px;
+
+  @media (min-width: 768px) {
+    padding-top: 96px;
+    padding-bottom: 52px;
+    font-size: 20px;
+    letter-spacing: 1.2px;
+    text-align-last: left;
+    padding-left: 30px;
+  }
+
+  @media (min-width: 1420px) {
+    padding-top: 210px;
+    padding-bottom: 65px;
+    padding-left: 0;
+    font-size: 30px;
+    letter-spacing: 1.8px;
+  }
+
+}
+
+.section-text {
+  color: $primary-white-color;
+  font-family: "Helvetica Neue Cyr";
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 22px;
+  letter-spacing: 0.48px;
+  text-align: center;
+
+  @media (min-width: 768px) {
+    letter-spacing: 1px;
+    font-size: 25px;
+    text-align: left;
+    line-height: 35px;
+    padding-left: 30px;
+
+  }
+
+  @media (min-width: 1420px) {
+    font-size: 35px;
+    line-height: 50px;
+    letter-spacing: 1.4px;
+    padding-left: 0;
+    padding-right: 104px;
+  }
+}
+
+.section-certificates__text {
+  margin-bottom: 30px;
+
+  & span {
+    display: block;
+  }
+
+  @media (min-width: 768px) {
+    margin-bottom: 70px;
+  }
+
+  @media (min-width: 1420px) {
+    margin-bottom: 0;
+  }
+}
+
+.section-certificates__list {
+  @extend%list;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  height: 230px;
+
+  @media (min-width: 768px) {
+    height: 364px;
+
+    &::after {
+      content: '';
+      display: block;
+      position: absolute;
+      height: 486px;
+      width: 602px;
+      background-image: url(../images/confeti.png);
+      left: 9%;
+      top: -10%;
+    }
+
+    &::before {
+      content: '';
+      display: block;
+      position: absolute;
+      height: 160px;
+      width: 222px;
+      background-image: url(../images/jupiter.png);
+      top: -220px;
+      right: 70px;
+
+    }
+  }
+
+  @media (min-width: 1420px) {
+    height: 500px;
+    width: 574px;
+    padding-top: 142px;
+    padding-left: 104px;
+
+    &::after {
+      width: 841px;
+      height: 679px;
+      background-image: url(../images/confeti-desktop.png);
+      background-repeat: no-repeat;
+      background-position: cover;
+      left: -15%;
+      top: 10%;
+    }
+
+    &::before {
+      content: '';
+      display: block;
+      position: absolute;
+      height: 160px;
+      width: 222px;
+      background-image: url(../images/jupiter.png);
+      top: 15%;
+      right: 0;
+      left: -75%;
+
+    }
+
+  }
+
+}
+
+.section-certificates__item {
+  position: absolute;
+
+  &--left {
+    transform: translate(45%, 5%);
+    z-index: 1;
+  }
+
+  &--right {
+    transform: translate(-40%, 5%);
+    z-index: 2;
+  }
+
+  &--center {
+    z-index: 3;
+  }
+}
+
+.flex-wrap {
+  @media (min-width: 1420px) {
+    display: flex;
+    justify-content: center;
+  }
+
+}

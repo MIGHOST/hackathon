@@ -1,57 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Placeholder title</title>
-    <!-- Сюда будет всталена ссылка на файл стилей -->
-    <!-- inject:css -->
-    <link rel="stylesheet" href="css/styles.css">
-    <!-- endinject -->
 
-    <link rel="stylesheet" href="./css/styles.css">
-  </head>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Placeholder title</title>
+  <!-- Сюда будет всталена ссылка на файл стилей -->
+  <!-- inject:css -->
+  <!-- endinject -->
 
-  <body>
+  <link rel="stylesheet" href="./css/styles.css">
+</head>
 
-    <!-- Сюда будет всталена ссылка на файл скриптов -->
-    <!-- inject:js -->
-    <!-- endinject -->
+<body>
+
+  <!-- Сюда будет всталена ссылка на файл скриптов -->
+  <!-- inject:js -->
+  <!-- endinject -->
+  
+    <header class="page-header">
+      <div class="container header-block">
+        <nav class="nav-menu">
+            <!-- LOGO -->
+            <div class="header__logo">
+                <a href="https://goit.ua/" class="header__logo--link">
+                <img src="images/header/Logo.png" alt="photo_logo" width="83" height="22" class="header__logo--img logo__animation"></a>
+              </div>
+            <!-- NAV LIST -->
+            <ul class="nav-list">
+                <li class="nav-list__item">
+                    <a href="#" class="nav-list__link active">Smart Start</a> </li>
+                <li class="nav-list__item">
+                    <a href="#" class="nav-list__link">GoStart Kids</a> </li>    
+                <li class="nav-list__item">
+                    <a href="#" class="nav-list__link">Контакти</a>
+                </li>           
+            </ul>
+        </nav>
     
-      <header class="page-header">
-        <div class="container header-block">
-          <nav class="nav-menu">
-              <!-- LOGO -->
-              <div class="header__logo">
-                  <a href="https://goit.ua/" class="header__logo--link">
-                  <img src="images/header/Logo.png" alt="photo_logo" width="83" height="22" class="header__logo--img logo__animation"></a>
-                </div>
-              <!-- NAV LIST -->
-              <ul class="nav-list">
-                  <li class="nav-list__item">
-                      <a href="#" class="nav-list__link active">Smart Start</a> </li>
-                  <li class="nav-list__item">
-                      <a href="#" class="nav-list__link">GoStart Kids</a> </li>    
-                  <li class="nav-list__item">
-                      <a href="#" class="nav-list__link">Контакти</a>
-                  </li>           
-              </ul>
-          </nav>
-      
-        <div class="header__headline">
-        <h1 class="header__main-title">IT- курси для підлітків 
-            11-15 років у Києві</h1>
-            <p class="header__text">
-                Перетворіть захоплення 
-                комп’ютером у джерело 
-                розвитку підлітка 
-            </p>
-    
-    <a href="#" class="header__text-link">Докладніше</a>
-    </div>
-    </div>
-      </header>
+      <div class="header__headline">
+      <h1 class="header__main-title">IT- курси для підлітків 
+          11-15 років у Києві</h1>
+          <p class="header__text">
+              Перетворіть захоплення 
+              комп’ютером у джерело 
+              розвитку підлітка 
+          </p>
+  
+  <a href="#" class="header__text-link">Докладніше</a>
+  </div>
+  </div>
+    </header>
+  <main>
     <section class="courses">
       <div class="container">
         <h2 class="courses__title">
@@ -249,45 +250,160 @@
           </ul>
       </div>
     </section>
-    <footer class="page-footer">
-    <div class="container footer-block">
-        <div class="footer__logo">
-            <a href="https://goit.ua/" class="header__logo--link">
-            <img src="images/footer/Logo.png" alt="photo_logo" width="83" height="22" class="footer__logo--img logo__animation"></a>
+    <section class="section-teachers">
+      <div class="container">
+          <h2 class="section-title section-title--teachers"> викладачі_ </h2>
+          <div class="section-wrapper">
+            <div class="section-teachers__block-content section-teachers__block-content--left">
+              <div class="section-teachers__block-pseuvdo section-teachers__block-pseuvdo--left">
+                <div class="section-teachers__block-img">
+                  <picture>
+                    <source srcset="../images/teacher3.jpg" media="(min-width: 768px)">
+                    <img src="../images/teacher3.jpg" alt="teachers">
+                  </picture>
+                </div>
+              </div>
+              <ul class="section-teachers__list">
+                <li class="section-teachers__item">- Двічі сертифікований тренер</li>
+                <li class="section-teachers__item">
+                  <pre>  Soft Skills</pre>
+                </li>
+                <li class="section-teachers__item">- Project Manager в “Brighta”</li>
+                <li class="section-teachers__item">- PO</li>
+                <li class="section-teachers__item">Навчить застосовувати методологію Scrum і Agile в роботі над IT проектом.
+                </li>
+              </ul>
+            </div>
+            <div class="section-teachers__block-content">
+              <div class="section-teachers__block-pseuvdo">
+                <div class="section-teachers__block-img">
+                  <picture>
+                    <source srcset="../images/teacher1.jpg" media="(min-width: 768px)">
+                    <img src="../images/teacher1-mobile.jpg" alt="teachers">
+                  </picture>
+                </div>
+              </div>
+        
+              <ul class="section-teachers__list">
+                <li class="section-teachers__item">- JavaScript Software Developer в 
+                  <pre>  SD Solutions</pre>
+                </li>
+                <li class="section-teachers__item">- Досвід роботи JavaScript 2 роки</li>
+                <li class="section-teachers__item">- Більше 5 готов web-проектів</li>
+                <li class="section-teachers__item">Навчить як правильно кодити і створювати односторінкові сайти використовуючи
+                  HTML/CSS.</li>
+              </ul>
+            </div>
+            <div class="section-teachers__block-content section-teachers__block-content--right">
+              <div class="section-teachers__block-pseuvdo section-teachers__block-pseuvdo--right">
+                <div class="section-teachers__block-img">
+                  <picture>
+                    <source srcset="../images/teacher2.jpg" media="(min-width: 768px)">
+                    <img src="../images/teacher2.jpg" alt="teachers">
+                  </picture>
+                </div>
+              </div>
+        
+              <ul class="section-teachers__list">
+                <li class="section-teachers__item">- Front-end Developer</li>
+                <li class="section-teachers__item">- 4 готових web-проектів</li>
+                <li class="section-teachers__item">Навчить розробляти зручний
+                  інтерфейс користувача для сайту.</li>
+              </ul>
+            </div>
+            <div class="section-teachers__btn-wrapper">
+              <button class="section-teachers__btn section-teachers__btn--pre"></button>
+              <button class="section-teachers__btn section-teachers__btn--next"></button>
+            </div>
           </div>
-          <div class="footer-block__headline">
-    <div class="adress-block">
-        <span class="adress-block__text"> 01133 Україна, Київ </span>   
-        <span class="adress-block__text"> 5 хвилин від м. Печерська</span>
-        <span class="adress-block__text"> бул. Лесі Українки 26</span>
-        <span class="adress-block__text">    4-й поверх</span>    
-    </div>
+      </div>
+     
     
+    </section>
+    <section class="section-certificates">
+      <div class="container">
+        <div class="flex-wrap">
+          <div class="col">
+            <h2 class="section-title section-certificates__title"> сертифікат_ </h2>
+            <p class="section-text section-certificates__text"><span>Після успішного складання</span> <span>командного
+                проекту</span> <span>студенти GoITeens</span> отримують
+              сертифікат</p>
+          </div>
+          <div class="col">
+            <ul class="section-certificates__list">
+              <li class="section-certificates__item section-certificates__item--left">
     
-    <ul class="footer-contact__list">
-      <li class="footer-contact__item"><a href="#" class="footer-contact__link">  contact@goiteens.ua</a></li>
-      <li class="footer-contact__item"><a href="#" class="footer-contact__link">+38 093 343 21 27</a></li>
-      <li class="footer-contact__item"><a href="#" class="footer-contact__link"> +38 067 326 95 92</a></li>
-      <li class="footer-contact__item"><a href="#" class="footer-contact__link">+38 050 366 17 77</a></li>
-    </ul>
+                <picture>
+                  <source srcset="images/certificate_2_desktop.png" media="(min-width: 1420px)">
+                  <source srcset="images/certificate_2_tablet.png" media="(min-width: 768px)">
+                  <img src="images/certificate_2_mobile.png" alt="certificates-go-it" class="section-certificates__img">
+                </picture>
     
-    <button class="footer__btn">
-        Залишити заявку
+              </li>
+              <li class="section-certificates__item section-certificates__item--center">
     
-    </button>
-    <ul class="social-list">
-      <li class="social-list__item"><a href="https://t.me/junior_developer_ua" class="social-list__link"><img src="images/footer/telegram.svg" alt="icon_social" class="social-list__img"></a></li>
-      <li class="social-list__item"><a href="https://www.facebook.com/goITclub/" class="social-list__link"><img src="images/footer/facebook.svg" alt="icon_social" class="social-list__img"></a></li>
-      <li class="social-list__item"><a href="https://www.youtube.com/channel/UCN7NQEBOUuIoXrJZzqVb58Q/videos" class="social-list__link"><img src="images/footer/youtube.svg" alt="icon_social" class="social-list__img"></a></li>
-    </ul>
-    <ul class="footer-list">
-      <li class="footer-list__item"><a href="#" class="footer-list__link">Політика конфіденційності</a></li>
-      <li class="footer-list__item"><a href="#" class="footer-list__link">Відмова від відповідальності</a></li>
-      <li class="footer-list__item"><a href="#" class="footer-list__link">Згода з розсилкою</a></li>
-    </ul>
-    </div>
-    </div>
-      
-    </footer>
-  </body>
+                <picture>
+                  <source srcset="images/certificate_1_desktop.png" media="(min-width: 1420px)">
+                  <source srcset="images/certificate_1_tablet.png" media="(min-width: 768px)">
+                  <img src="images/certificate_1_mobile.png" alt="certificates-go-it" class="section-certificates__img">
+                </picture>
+    
+              </li>
+              <li class="section-certificates__item section-certificates__item--right">
+    
+                <picture>
+                  <source srcset="images/certificate_3_desktop.png" media="(min-width: 1420px)">
+                  <source srcset="images/certificate_3_tablet.png" media="(min-width: 768px)">
+                  <img src="images/certificate_3_mobile.png" alt="certificates-go-it" class="section-certificates__img">
+                </picture>
+    
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="page-footer">
+  <div class="container footer-block">
+      <div class="footer__logo">
+          <a href="https://goit.ua/" class="header__logo--link">
+          <img src="images/footer/Logo.png" alt="photo_logo" width="83" height="22" class="footer__logo--img logo__animation"></a>
+        </div>
+        <div class="footer-block__headline">
+  <div class="adress-block">
+      <span class="adress-block__text"> 01133 Україна, Київ </span>   
+      <span class="adress-block__text"> 5 хвилин від м. Печерська</span>
+      <span class="adress-block__text"> бул. Лесі Українки 26</span>
+      <span class="adress-block__text">    4-й поверх</span>    
+  </div>
+  
+  
+  <ul class="footer-contact__list">
+    <li class="footer-contact__item"><a href="#" class="footer-contact__link">  contact@goiteens.ua</a></li>
+    <li class="footer-contact__item"><a href="#" class="footer-contact__link">+38 093 343 21 27</a></li>
+    <li class="footer-contact__item"><a href="#" class="footer-contact__link"> +38 067 326 95 92</a></li>
+    <li class="footer-contact__item"><a href="#" class="footer-contact__link">+38 050 366 17 77</a></li>
+  </ul>
+  
+  <button class="footer__btn">
+      Залишити заявку
+  
+  </button>
+  <ul class="social-list">
+    <li class="social-list__item"><a href="https://t.me/junior_developer_ua" class="social-list__link"><img src="images/footer/telegram.svg" alt="icon_social" class="social-list__img"></a></li>
+    <li class="social-list__item"><a href="https://www.facebook.com/goITclub/" class="social-list__link"><img src="images/footer/facebook.svg" alt="icon_social" class="social-list__img"></a></li>
+    <li class="social-list__item"><a href="https://www.youtube.com/channel/UCN7NQEBOUuIoXrJZzqVb58Q/videos" class="social-list__link"><img src="images/footer/youtube.svg" alt="icon_social" class="social-list__img"></a></li>
+  </ul>
+  <ul class="footer-list">
+    <li class="footer-list__item"><a href="#" class="footer-list__link">Політика конфіденційності</a></li>
+    <li class="footer-list__item"><a href="#" class="footer-list__link">Відмова від відповідальності</a></li>
+    <li class="footer-list__item"><a href="#" class="footer-list__link">Згода з розсилкою</a></li>
+  </ul>
+  </div>
+  </div>
+    
+  </footer>
+</body>
+
 </html>

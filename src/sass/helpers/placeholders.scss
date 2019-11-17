@@ -1,16 +1,37 @@
 %link {
-    display: block;
-    text-decoration: none;
-    margin: 0;
-    padding: 0;
-
+  display: block;
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
 }
 
 %list {
-    list-style: none;  
-    margin: 0;
-    padding: 0;
- 
-} 
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
 
+%title {
+  color: $primary-black-color;
+  font-family: Oswald;
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 20px;
+  text-transform: uppercase;
+  letter-spacing: 0.9px;
+  margin: 0;
 
+  &::after {
+    display: inline-block;
+    content: "\005D";
+    color: $secondary-yellow-color;
+
+  }
+
+  &::before {
+    display: inline-block;
+    content: "\005B";
+    color: $secondary-yellow-color;
+  }
+
+}

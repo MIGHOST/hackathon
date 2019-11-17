@@ -13,4 +13,34 @@
  
 } 
 
+%title {
+    color: $primary-black-color;
+    font-family: Oswald;
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 20px;
+    text-transform: uppercase;  
+    letter-spacing: 0.9px;
+
+    &::after {
+        display: inline-block;
+        content: "\005D";
+        color: $secondary-yellow-color;
+     
+    }
+
+    &::before {
+        display: inline-block;
+        content: "\005B";
+        color: $secondary-yellow-color;
+    }
+
+}
+
+%button {
+    border: none;
+    display: flex;
+    // padding: 25px 50px;
+}
+
 

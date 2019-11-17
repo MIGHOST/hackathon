@@ -1,0 +1,145 @@
+.training-format {
+  padding-top: 48px;
+  padding-bottom: 70px;
+  background-image: url('../images/section-2-bg.png');
+  background-size: cover;
+  background-position-y: 104px;
+  min-height: 518px;
+  background-repeat: no-repeat;
+  position: relative;
+
+    @media (min-width: 768px) {
+      padding: 85px 80px 60px;
+      min-height: 580px;
+    }
+
+    @media (min-width: 1420px) {
+      min-height: 790px;
+    }
+   
+
+  .absolute-container::after {
+    position: absolute;
+    content: '';
+    background-image: url('../images/training-format/sputnik-mobile.png');
+    width: 92px;
+    height: 200px;
+    right: 0px;
+    bottom: -16px;
+
+    @media (min-width: 768px) {
+      background-image: url('../images/training-format/sputnik-tablet.png');
+      width: 298px;
+      height: 370px;
+      bottom: 32px;
+    }
+
+    @media (min-width: 1420px) {
+      background-image: url('../images/training-format/sputnik-desktop.png');
+      width: 561px;
+      height: 563px;
+      bottom: 32px;
+      right: 240px;
+    }
+  }
+
+  
+
+  .container {
+    @media (min-width: 1420px) {
+      padding: 240px 0px 0 200px;
+    }
+  }
+
+  &__title {
+    @extend %title;
+    color: $secondary-black-color;
+    line-height: 45px;
+    text-align: center;
+    padding-bottom: 54px;
+
+    @media (min-width: 768px) {
+      font-size: 20px;
+      line-height: 45px;
+    }
+
+    @media (min-width: 1420px) {
+      text-align: left;
+      font-size: 30px;
+    }
+  }
+
+}
+
+.training-list {
+  @extend %list;
+  position: relative;
+  padding-left: 40px;
+  letter-spacing: 0.3px;
+}
+
+.training-list__item {
+  position: relative;
+  padding-bottom: 28px;
+
+}
+
+.training-list__title {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 30px;
+  color: $secondary-black-color;
+  padding-bottom: 5px;
+
+  @media (min-width: 768px) {
+    font-size: 25px;
+    line-height: 30px;
+    padding-bottom: 14px;
+  }
+  
+  &--blue-star::before {
+    content: '';
+    position: absolute;
+    left: -40px;
+    width: 20px;
+    height: 20px;
+    top: 8px;
+    @include bg-image ($path: '../images/training-format/star-blue.png', $size: cover, $repeat: no-repeat, $pos: center)
+  }
+
+  &--orange-star::before {   
+    content: '';
+    position: absolute;
+    left: -40px;
+    width: 20px;
+    height: 20px;
+    top: 8px;
+    @include bg-image ($path: '../images/training-format/star-orange.png', $size: cover, $repeat: no-repeat, $pos: center)
+  }
+
+  &--purple-star::before {   
+    content: '';
+    position: absolute;
+    left: -40px;
+    width: 20px;
+    height: 20px;
+    top: 8px;
+    @include bg-image ($path: '../images/training-format/star-purple.png', $size: cover, $repeat: no-repeat, $pos: center)
+  }
+
+  &__par {
+    font-size: 14px;
+    line-height: 24px;
+  }
+
+}
+
+.training-list__description {
+  display: flex;
+  flex-direction: column;
+  width: 193px;
+
+  @media (min-width: 768px) {
+    width: 360px;
+  }
+}

@@ -7,12 +7,14 @@
     <title>Placeholder title</title>
     <!-- Сюда будет всталена ссылка на файл стилей -->
     <!-- inject:css -->
+    <link rel="stylesheet" href="css/styles.css">
     <!-- endinject -->
 
     <link rel="stylesheet" href="./css/styles.css">
   </head>
 
   <body>
+
     <!-- Сюда будет всталена ссылка на файл скриптов -->
     <!-- inject:js -->
     <!-- endinject -->
@@ -50,6 +52,147 @@
     </div>
     </div>
       </header>
+    <section class="courses">
+      <div class="container">
+        <h2 class="courses__title">
+          підготуйте свою дитину
+          <span>до викликів швидкої</span>
+          сучасності_
+        </h2>
+        <p class="courses__subtitle">
+          <span>Ми пропонуємо освітні,</span>
+          <span>практичні програми</span>
+          <span>за такими напрямками:</span>
+        </p>
+        <ul class="courses-direction">
+          <li class="courses-direction__item">
+            <h3 class="courses-direction__title">Smart Start</h3>
+            <p class="courses-direction__age">13-15 <span>років</span></p>
+            <p class="courses-direction__descr">
+              Створення веб-сайтів будь-якої складності. Вивчення HTML/CSS і
+              JavaScript.
+            </p>
+          </li>
+          <li class="courses-direction__item">
+            <h3 class="courses-direction__title">Game Dev</h3>
+            <p class="courses-direction__age">13-15 <span>років</span></p>
+            <p class="courses-direction__descr">
+              Розробка комп’ютерних ігор. Опанування мови C# і платформи Unity.
+            </p>
+          </li>
+          <li class="courses-direction__item">
+            <h3 class="courses-direction__title">Digital Design</h3>
+            <p class="courses-direction__age">13-15 <span>років</span></p>
+            <p class="courses-direction__descr">
+              Графічний дизайн з нуля. Опанування UI/UX і створення власного
+              графічного портфоліо.
+            </p>
+          </li>
+          <li class="courses-direction__item">
+            <h3 class="courses-direction__title">GoStart Kids</h3>
+            <p class="courses-direction__age">13-15 <span>років</span></p>
+            <p class="courses-direction__descr">
+              Курс з основ програмування для молодших підлітків.
+            </p>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section class="test">
+      <div class="container">
+        <p class="test__descr">
+          Пройдіть тест, щоб дізнатися який напрямок в IT підійде вашій дитині
+        </p>
+        <div class="test-content">
+          <div class="descr-box">
+            <h2 class="test-content__title">
+              тест_
+            </h2>
+            <p class="test-content__descr">
+              Ми створили тест, який визначить найбільш відповідний для вас курс,
+              враховуючи особливості характеру і особистості. Всього 2 хвилини - і
+              ви дізнаєтеся, яка професія в IT підійде саме для вашої дитини.
+            </p>
+          </div>
+          <div class="box-quastion">
+            <div class="test-quastion-box">
+              <p class="test-content__quastion">Питання</p>
+              <div class="test-slider">
+                <button class="test-slider__btn-left"></button>
+                <span class="test-slider__count-first">02</span>
+                <span class="test-slider__count-slash"> / </span>
+                <span class="test-slider__count-second">10</span>
+                <button class="test-slider__btn-right"></button>
+              </div>
+            </div>
+            <h3 class="test-content__quastion-descr">
+              В яку гру більш за все полюбляє грати ваша дитина
+            </h3>
+            <div class="quastion-slider">
+              <button class="quastion-slider__prev">назад</button>
+              <button class="quastion-slider__next">Далі</button>
+            </div>
+          </div>
+          <form action="#" class="test-form">
+            <div class="test-form__group">
+              <input
+                type="radio"
+                name="answer-filter"
+                class="test-form__input"
+                id="answer-1"
+              />
+              <label for="answer-1" class="radio-label"
+                >Відповідь 1
+                <span class="radio-label__descr">Майнкрафт</span>
+              </label>
+            </div>
+            <div class="test-form__group">
+              <input
+                type="radio"
+                name="answer-filter"
+                class="test-form__input"
+                id="answer-2"
+              />
+              <label for="answer-2" class="radio-label"
+                >Відповідь 2
+                <span class="radio-label__descr">Знайди 10 відмінностей</span>
+              </label>
+            </div>
+            <div class="test-form__group">
+              <input
+                type="radio"
+                name="answer-filter"
+                class="test-form__input"
+                id="answer-3"
+              />
+              <label for="answer-3" class="radio-label"
+                >Відповідь 3
+                <span class="radio-label__descr">Збирати пазли</span>
+              </label>
+            </div>
+            <div class="test-form__group">
+              <input
+                type="radio"
+                name="answer-filter"
+                class="test-form__input"
+                id="answer-4"
+              />
+              <label for="answer-4" class="radio-label"
+                >Відповідь 4
+                <span class="radio-label__descr">Конструктор LEGO</span>
+              </label>
+            </div>
+          </form>
+          <div class="test-slider">
+            <button class="test-slider__btn-left"></button>
+            <span class="test-slider__count-first">02</span>
+            <span class="test-slider__count-slash"> / </span>
+            <span class="test-slider__count-second">10</span>
+            <button class="test-slider__btn-right"></button>
+          </div>
+        </div>
+      </div>
+    </section>
     <section class="course-components container">
     
       <h2 class="course-components__title"> три складових курсів goiteens_ </h2>

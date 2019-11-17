@@ -8,7 +8,9 @@
 @import './bases/normalize';
 @import './bases/base';
 
-
 // /components/
-@import './src/sass/components/header';
-@import './src/sass/components/footer';
+@import './components/header';
+@import './components/section-courses';
+@import './components/section-test';
+@import './components/footer';
+

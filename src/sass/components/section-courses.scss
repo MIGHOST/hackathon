@@ -1,0 +1,251 @@
+.courses {
+  position: relative;
+  padding: 130px 0;
+
+  &::before {
+    display: block;
+    position: absolute;
+    top: 48px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    content: '';
+    width: 76px;
+    height: 76px;
+    background-image: url('../images/icons/svg/icon-code.svg');
+    background-position: center;
+    background-size: cover;
+  }
+
+  @media (min-width: 768px) {
+    padding-top: 158px;
+
+    &::before {
+      top: 35px;
+      width: 110px;
+      height: 109px;
+    }
+  }
+
+  @media (min-width: 1420px) {
+    padding-top: 188px;
+
+    &::before {
+      top: 48px;
+      width: 144px;
+      height: 143px;
+    }
+  }
+
+  &__title {
+    @extend %title;
+    margin-bottom: 20px;
+    text-align: center;
+
+    span {
+      display: block;
+    }
+
+    @media (min-width: 768px) {
+      margin-bottom: 34px;
+      font-size: 20px;
+      line-height: 25px;
+      letter-spacing: 1.2px;
+
+      span {
+        display: inline-block;
+      }
+    }
+
+    @media (min-width: 1420px) {
+      font-size: 30px;
+      line-height: 45px;
+      margin-bottom: 46px;
+      letter-spacing: 1.9px;
+    }
+  }
+
+  &__subtitle {
+    margin-bottom: 23px;
+    color: $secondary-yellow-color;
+    font-family: 'Helvetica Neue Cyr';
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 22px;
+    letter-spacing: 0.48px;
+    text-align: center;
+
+    span {
+      display: block;
+    }
+
+    @media (min-width: 768px) {
+      margin-bottom: 36px;
+      padding: 0 124px;
+      font-size: 20px;
+      line-height: 25px;
+      letter-spacing: 0.6px;
+
+      span {
+        display: inline-block;
+      }
+    }
+
+    @media (min-width: 1420px) {
+      padding: 0 354px;
+      margin-bottom: 63px;
+      font-size: 30px;
+      line-height: 40px;
+      letter-spacing: 0.9px;
+    }
+  }
+}
+
+.courses-direction {
+  @extend %list;
+
+  @media (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  &__item {
+    flex-basis: 320px;
+    padding: 40px 20px;
+    background-color: rgb(245, 249, 254);
+    transition: transform 400ms linear;
+
+    &:nth-child(even) {
+      background-color: rgb(229, 241, 251);
+    }
+
+    &:hover {
+      cursor: pointer;
+      transform: scale(1.08);
+    }
+
+    @media (min-width: 768px) {
+      flex-basis: 340px;
+      padding: 40px 30px;
+
+      &:nth-child(even) {
+        background-color: rgb(245, 249, 254);
+      }
+
+      &:nth-child(4n + 2),
+      &:nth-child(4n + 3) {
+        background-color: rgb(229, 241, 251);
+      }
+    }
+
+    @media (min-width: 1420px) {
+      flex-basis: 355px;
+      padding: 40px 24px;
+
+      &:nth-child(even) {
+        background-color: rgb(229, 241, 251);
+      }
+
+      &:nth-child(4n + 3) {
+        background-color: rgb(245, 249, 254);
+      }
+    }
+  }
+
+  &__title {
+    margin-bottom: 38px;
+    position: relative;
+    padding-left: 35px;
+    font-family: 'Helvetica Neue Cyr';
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 25px;
+    color: $secondary-text-color;
+    letter-spacing: 0.6px;
+
+    &::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 2px;
+      width: 18px;
+      height: 17px;
+      background-image: url('../images/icons/svg/star/star.png');
+      background-size: cover;
+    }
+
+    @media (min-width: 768px) {
+      font-size: 25px;
+      letter-spacing: 0.75px;
+    }
+
+    @media (min-width: 1420px) {
+      font-size: 30px;
+      letter-spacing: 0.9px;
+    }
+  }
+
+  &__age {
+    margin-bottom: 20px;
+    position: relative;
+    color: $secondary-yellow-color;
+    font-family: 'Helvetica Neue Cyr';
+    font-size: 25px;
+    font-weight: 700;
+    line-height: 22px;
+    letter-spacing: 0.38px;
+
+    @media (min-width: 768px) {
+      font-size: 30px;
+      letter-spacing: 0.45px;
+    }
+
+    @media (min-width: 1420px) {
+      font-size: 22px;
+      letter-spacing: 0.6px;
+    }
+
+    span {
+      position: absolute;
+      top: -16px;
+      left: 72px;
+      font-family: 'Helvetica Neue Cyr';
+      font-size: 13px;
+      font-weight: 400;
+      line-height: 22px;
+      letter-spacing: 0.2px;
+
+      @media (min-width: 768px) {
+        left: 86px;
+      }
+
+      @media (min-width: 1420px) {
+        left: 68px;
+      }
+
+      &::after {
+        display: block;
+        content: '';
+        width: 32px;
+        height: 1px;
+        background-color: $secondary-yellow-color;
+      }
+    }
+  }
+
+  &__descr {
+    color: $secondary-text-color;
+    font-family: 'Helvetica Neue Cyr';
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.48px;
+
+    @media (min-width: 768px) {
+      font-size: 16px;
+      line-height: 30px;
+      letter-spacing: 0.48px;
+    }
+  }
+}
